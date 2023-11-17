@@ -1,38 +1,81 @@
+* {
+    background-color: #363537;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+.column-100, .column-75, .column-50, .column-40, .column-25 {
+    float: left;
+    padding: 20px;
+
+}
+
+.column-100 {
+    width: 100%;
+}
+
+.column-75 {
+    width: 75%;
+}
+
+.column-50 {
+    width: 50%;
+}
+
+.column-40 {
+    width: 40%;
+}
+
+.column-25 {
+    width: 25%;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.İçApp {
+    display: flex;
+    justify-content: center;
+    height: 800px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Sayı {
+    color: #06d6a0;
+    margin-top: 80px;
+    font-size: 400px;
+    font-weight: 700;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Buton {
+    position: relative;
+    left: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Input {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fcfafa;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 30px;
+    outline: 0;
 }
